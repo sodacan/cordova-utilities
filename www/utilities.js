@@ -7,6 +7,8 @@ Utilities.prototype.isAddressBookAuthed = function(successCallback)
 {
     exec(successCallback, null, "Utilities", "isAddressBookAuthed", []);
 };
+
+module.exports = new Utilities();
 */
 
 var Utilities =
@@ -17,4 +19,4 @@ var Utilities =
     }
 };
 
-module.exports = new Utilities();
+module.exports = Utilities;
