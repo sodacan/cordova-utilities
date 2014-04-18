@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="com.sodacan.utilities"
+           id="com.sodacan.cordova.utilities"
       version="0.1.0">
     <name>Utilities</name>
-    <description>Utilities plugin for iOS</description>
+    <description>Cordova utilities plugin for iOS</description>
     <license>MIT</license>
     <keywords>utilities</keywords>
 
