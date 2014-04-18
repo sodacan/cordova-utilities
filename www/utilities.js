@@ -3,17 +3,17 @@ var exec = require('cordova/exec');
 /*
 function Utilities() {}
 
-Utilities.prototype.isAddressBookAuthed = function(successCallback, failureCallback)
+Utilities.prototype.isAddressBookAuthed = function(successCallback)
 {
-    exec(successCallback, failureCallback, "Utilities", "isAddressBookAuthed", []);
+    exec(successCallback, null, "Utilities", "isAddressBookAuthed", []);
 };
 */
 
 var Utilities =
 {
-    isAddressBookAuthed: function(successCallback, failureCallback)
+    isAddressBookAuthed: function(successCallback)
     {
-        exec(successCallback, failureCallback, "Utilities", "isAddressBookAuthed", []);
+        exec(successCallback, null, "Utilities", "isAddressBookAuthed", []);
     }
 };
 

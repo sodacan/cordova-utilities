@@ -10,9 +10,8 @@
 
 
     <js-module src="www/utilities.js" name="Utilities">
-    	<clobbers target="window.Utilities" />
+        <clobbers target="window.Utilities" />
     </js-module>
-
 
 
     <!-- ios -->
@@ -25,5 +24,7 @@
 
         <header-file src="src/ios/Utilities.h" />
         <source-file src="src/ios/Utilities.m" />
+
+        <framework src="AddressBook.framework" weak="true" />
     </platform>
 </plugin>
