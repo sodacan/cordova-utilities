@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.sodacan.utilities"
+      version="0.1.0">
+    <name>Utilitioes</name>
+    <description>Utilities plugin for iOS</description>
+    <license>MIT</license>
+    <keywords>utilities</keywords>
+
+
+    <js-module src="www/utilities.js" name="Utilities">
+    	<clobbers target="window.Utilities" />
+    </js-module>
+
+
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Utilities">
+                <param name="ios-package" value="Utilities"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/Utilities.h" />
+        <source-file src="src/ios/Utilities.m" />
+    </platform>
+</plugin>
