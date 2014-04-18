@@ -11,11 +11,12 @@ Utilities.prototype.isAddressBookAuthed = function(successCallback)
 module.exports = new Utilities();
 */
 
-var Utilities =
-{
-    isAddressBookAuthed: function(successCallback)
-    {
-        exec(successCallback, null, "Utilities", "isAddressBookAuthed", []);
+var Utilities = {
+    isAddressBookAuthed: function(successCallback) {
+        var callbackWrapper = function (result) {
+            successCallback(result == '1');
+        };
+        exec(callbackWrapper, null, "Utilities", "isAddressBookAuthed", []);
     }
 };
 
